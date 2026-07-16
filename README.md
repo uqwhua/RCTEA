@@ -2,9 +2,11 @@
 
 RCTEA is a richness-guided co-training framework for temporal entity alignment. It jointly models both structural and temporal aspects of the TKGs for entity alignment. A richness-guided attention mechanism along with an adaptive weighting strategy are designed to facilitate effective feature fusion. To ensure robust alignment despite noisy entity contexts, a dual-view neighborhood consensus algorithm jointly refines the feature encoders to enforce local structural consistency of the predicted alignments.
 
-![Framework Overview](framework.png)
+![Framework Overview](figs/framework.png)
 
 ## 🌟 Datasets
+
+![Dataset Statistics](figs/datasets.png)
 
 * ent_ids_1: ids for entities in source TKG;
 * ent_ids_2: ids for entities in target TKG;
