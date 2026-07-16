@@ -8,6 +8,8 @@ RCTEA is a richness-guided co-training framework for temporal entity alignment. 
 
 ![Dataset Statistics](figs/datasets.png)
 
+We provide three types of TEA datasets to evaluate the RCTEA model: (1) DICEWS and YAGO-WIKI50K with full temporal coverage and no temporal heterogeneity. (2) YAGO-WIKI20K with partial temporal coverage and no temporal heterogeneity. (3) YAGO-WIKI180K and BETA with partial temporal coverage and temporal heterogeneity.
+
 * ent_ids_1: ids for entities in source TKG;
 * ent_ids_2: ids for entities in target TKG;
 * ref_pairs: the aligned entity pairs;
@@ -19,8 +21,10 @@ RCTEA is a richness-guided co-training framework for temporal entity alignment. 
 
 ## 🚀 Quick Start
 
+Follow the steps to train and evaluate the RCTEA model:
+
 * Create the environment using the environment.yml file.
-* Configure the dataset specification to run the model with a specific dataset such as YAGO-WIKI20K and ICEWS (the default dataset is YAGO-WIKI180K).
+* Configure the dataset specification to run the model with a specific dataset such as YAGO-WIKI20K and DICEWS (the default dataset is YAGO-WIKI180K).
 * Run main.py train and evaluate the model.
 
 You may also run main_gen_seeds.py to produce alignment seeds, test the seed accuracy, and generate a certain number of seeds to train the model.
